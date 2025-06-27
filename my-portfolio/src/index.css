@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Hide scrollbar when body has 'lock-scroll' */
+body.lock-scroll {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+body.lock-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Show scrollbar only when lock-scroll is removed */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #22c55e; /* Tailwind green-500 */
+  border-radius: 6px;
+  border: 2px solid #111111; /* match dark background */
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #16a34a; /* green-600 */
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #22c55e transparent;
+}
+
+
+
+
+
+
