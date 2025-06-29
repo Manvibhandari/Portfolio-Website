@@ -6,8 +6,9 @@ import Img1 from "../assets/Lum.jpg";
 import Img2 from "../assets/todo.png";
 import Img3 from "../assets/convert.png";
 import Img4 from "../assets/text.png";
-import Img5 from "../assets/theme.png";
-import Img6 from "../assets/bgchange.png";
+import Img6 from "../assets/theme.png";
+import Img5 from "../assets/calculator.png";
+import Img7 from "../assets/bgchange.png";
 
 const projects = [
   {
@@ -19,33 +20,39 @@ const projects = [
   {
     id: "02",
     title: "Todo List Application",
-    tech: ["Javascript", "HTML5", "CSS"],
+    tech: ["Javascript", "HTML", "CSS"],
     image: Img2,
   },
   {
     id: "03",
     title: "Currency Converter",
     link: "#",
-    tech: ["Javascript", "HTML5", "CSS"],
+    tech: ["Javascript", "HTML", "CSS"],
     image: Img3,
   },
   {
     id: "04",
     title: "Password Generator",
-    tech: ["Javascript", "HTML5", "CSS"],
+    tech: ["Javascript", "HTML", "CSS"],
     image: Img4,
   },
   {
     id: "05",
-    title: "Theme Switcher",
-    tech: ["Javascript", "HTML5", "CSS"],
+    title: "Calculator",
+    tech: ["Javascript", "HTML", "CSS"],
     image: Img5,
   },
   {
     id: "06",
-    title: "Background Color Changer",
-    tech: ["Javascript", "HTML5", "CSS"],
+    title: "Theme Switcher",
+    tech: ["Javascript", "HTML", "CSS"],
     image: Img6,
+  },
+  {
+    id: "07",
+    title: "Background Color Changer",
+    tech: ["Javascript", "HTML", "CSS"],
+    image: Img7,
   },
 ];
 
@@ -59,7 +66,7 @@ export default function Projects() {
     >
       <div className="max-w-7xl mx-auto ml-10 relative">
         {/* Heading */}
-        <div className="flex items-center gap-2 mb-12 mt-[50px]"> {/* ✅ Additional margin above heading */}
+        <div className="flex items-center gap-2 mb-12 mt-[50px]">
           <motion.span
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
@@ -77,7 +84,9 @@ export default function Projects() {
             <div
               key={index}
               className={`group relative cursor-pointer transition-all duration-300 ${
-                hoveredIndex !== null && hoveredIndex !== index ? "opacity-30" : "opacity-100"
+                hoveredIndex !== null && hoveredIndex !== index
+                  ? "opacity-30"
+                  : "opacity-100"
               }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -117,12 +126,16 @@ export default function Projects() {
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     exit={{ opacity: 0, x: 10, scale: 0.95 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute top-0 left-[600px] w-[400px] rounded-xl shadow-xl hidden md:block z-20"
+                    className={`absolute ${
+                      index === projects.length - 1
+                        ? "bottom-0"
+                        : "top-1/2 -translate-y-1/2"
+                    } left-[560px] w-[360px] max-h-[450px] object-contain rounded-xl shadow-xl hidden md:block z-30`}
                   />
                 )}
               </AnimatePresence>
 
-              {/* Grey Line Divider (not after last project) */}
+              {/* Divider */}
               {index !== projects.length - 1 && (
                 <div className="border-b border-gray-700 mt-6 pt-6" />
               )}

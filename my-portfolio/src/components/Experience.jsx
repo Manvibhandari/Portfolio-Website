@@ -9,7 +9,6 @@ export default function Experience() {
       className="w-full min-h-screen text-white px-6 md:px-12 pb-24 mt-50 scroll-mt-[100px] bg-transparent"
     >
       <div className="max-w-7xl mx-auto ml-10">
-        {/* Heading */}
         <div className="flex items-center gap-2 mb-12">
           <motion.span
             animate={{ rotate: 360 }}
@@ -33,18 +32,18 @@ export default function Experience() {
           >
             <p className="text-lg md:text-xl text-white">Luminaries</p>
             <h2 className="text-3xl md:text-5xl font-anton text-gray-100">
-              Freelancer (Frontend)
+              Freelancer (Frontend Developer)
             </h2>
-            <p className="text-sm text-gray-400">Jan 2025 – June 2025</p>
+            <p className="text-sm text-gray-400">April 2025 – June 2025</p>
 
             {/* Contributions */}
             <div className="mt-4 space-y-2 text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl">
               <p className="font-semibold text-white">What I did:</p>
               <ul className="list-disc pl-5 space-y-1">
-                <li>Built a responsive UI for a mental wellness startup using React and Tailwind CSS.</li>
-                <li>Integrated animation using Framer Motion to enhance user interaction.</li>
-                <li>Collaborated closely with a backend developer for seamless API integration.</li>
-                <li>Delivered the project within a tight deadline of 6 weeks.</li>
+                <li>Developed a fully responsive UI for a mental wellness startup using React.js and Tailwind CSS.</li>
+                <li>Integrated smooth, engaging animations with Framer Motion to improve user interaction and experience.</li>
+                <li>Worked closely with the backend developer to implement seamless API integrations.</li>
+                <li>Successfully delivered the project within a tight 6-week deadline, ensuring quality and performance.</li>
               </ul>
 
               <p className="pt-3 font-semibold text-white">Tools & Technologies:</p>

@@ -143,10 +143,10 @@ function Home() {
                 <div>
                   <h3 className="text-lg text-gray-400 mb-3 ml-14 mt-15">SOCIAL</h3>
                   <ul className="space-y-3 ml-14 text-lg">
-                    <li><a href="https://github.com/Manvibhandari" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/manvi-bhandari-680439258/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">LinkedIn</a></li>
-                    <li><a href="https://unstop.com/u/Manvibhandari" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Unstop</a></li>
-                    <li><a href="https://oldversion.example.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Old Version</a></li>
+                    <li><a href="https://github.com/Manvibhandari" target="_blank"  className="hover:text-green-400">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/manvi-bhandari-680439258/" target="_blank"  className="hover:text-green-400">LinkedIn</a></li>
+                    <li><a href="https://unstop.com/u/Manvibhandari" target="_blank"  className="hover:text-green-400">Unstop</a></li>
+                    <li><a href="https://x.com/Manvibhandari30" target="_blank"  className="hover:text-green-400">Twitter</a></li>
                   </ul>
                 </div>
                 <SidebarMenu closePanel={closePanel} />
@@ -165,7 +165,7 @@ function Home() {
             manvibhandari05@gmail.com
           </div>
 
-          {/* HERO SECTION */}
+          {/*  SECTION */}
           <motion.section
             id="home"
             className="flex flex-col justify-center items-start min-h-screen px-8 md:px-24 pb-32 transition duration-700"
@@ -183,7 +183,7 @@ function Home() {
               </button>
             </div>
 
-            {/* EXPERIENCE STATS ON RIGHT */}
+            {/* EXPERIENCE  */}
             <div className="absolute right-6 top-1/2 -translate-y-1/2 text-right space-y-8 z-20 text-lg transition duration-300">
               <div>
                 <div className="text-4xl font-bold text-green-500">1+</div>
@@ -203,7 +203,10 @@ function Home() {
           {/* SPACER */}
           <div className="h-24" />
 
-          {/* OTHER SECTIONS */}
+          {/* SCROLL PROGRESS BAR */}
+          <ScrollProgressBar />
+
+          {/* MAIN CONTENT SECTIONS */}
           <AboutMe />
           <Experience />
           <Projects />

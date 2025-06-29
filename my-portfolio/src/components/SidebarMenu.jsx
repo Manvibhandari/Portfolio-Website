@@ -6,18 +6,18 @@ const menuItems = [
   { name: "Home", color: "bg-yellow-400", href: "#home" },
   { name: "About Me", color: "bg-blue-500", href: "#about" },
   { name: "Experience", color: "bg-emerald-400", href: "#experience" },
-  { name: "Projects", color: "bg-purple-500", href: "#projects" }, // ✅ Added Projects
+  { name: "Projects", color: "bg-purple-500", href: "#projects" },
 ];
 
 function SidebarMenu({ closePanel }) {
   const handleClick = (href) => {
-    closePanel(); // Close the sidebar
+    closePanel(); 
     setTimeout(() => {
       const el = document.querySelector(href);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }, 200); // Delay allows sidebar animation to complete
+    }, 200);
   };
 
   return (
@@ -40,7 +40,7 @@ function SidebarMenu({ closePanel }) {
                 />
               </span>
 
-              {/* Menu Text with Hover Color */}
+              
               <span className="transition-colors duration-200 group-hover:text-green-400">
                 {item.name}
               </span>

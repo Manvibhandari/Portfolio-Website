@@ -32,7 +32,7 @@ export default function AboutMe() {
           I believe in a user-centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
         </p>
 
-        {/* "This is me." and Divider Line */}
+        {/* ABOUT ME SECTION */}
         <div className="mt-20">
           <p className="text-sm text-gray-400 uppercase tracking-widest mb-3">This is me.</p>
           <hr className="border-gray-600 mb-8" />
@@ -57,10 +57,9 @@ export default function AboutMe() {
         {/* STACK SECTION */}
         <div className="mt-60">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12">
-            {/* LEFT SIDE: Icon + Headings */}
             <div className="flex flex-col space-y-2 mt-[-40px]">
               <div className="flex items-center gap-2">
-                {/* Rotating gray icon */}
+                
                 <motion.span
                   animate={{ rotate: 360 }}
                   transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
@@ -76,9 +75,9 @@ export default function AboutMe() {
               </h2>
             </div>
 
-            {/* RIGHT SIDE: Icon Grid */}
+            {/* RIGHT SIDE */}
             <div className="pr-8 md:pr-20 lg:pr-28 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-6 text-white text-left">
-              {/* Gap between icon & label reduced using gap-2 and smaller text */}
+              
               <div className="flex items-center gap-2 text-base">
                 <FaHtml5 className="text-orange-500 text-4xl md:text-5xl" /> HTML5
               </div>
