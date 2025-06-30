@@ -13,7 +13,7 @@ import Img7 from "../assets/bgchange.png";
 const projects = [
   {
     id: "01",
-    title: "Student Management portal",
+    title: "Student Management Portal",
     tech: ["React.js", "Tailwind CSS", "HTML5"],
     image: Img1,
   },

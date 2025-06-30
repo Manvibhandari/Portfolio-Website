@@ -85,7 +85,7 @@ function Home() {
         <source src="space3.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-black opacity-50 z-10" />
+      <div className="absolute inset-0 bg-black opacity-80 z-10" />
 
       <style>{`
         body, * { cursor: none !important; }
